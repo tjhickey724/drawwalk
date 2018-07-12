@@ -2,8 +2,6 @@
 {{#if currentUser}}
   {{> location_info user=user}}
 <hr>
-    {{> fbinfo user=user}}
-<hr>
 <ol>
 {{#each p in profiles}}
   <li>{{p.name}}: {{p.location.lat}} -- {{p.location.lon}}</li>
